@@ -1,1 +1,14 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
+<bug_report>
+  <short_description>Files outside SOURCE_DIR are processed</short_description>
+  <description>The application handles random files outside the SOURCE_DIR directory</description>
+  <steps>
+    <step_1>place files outside SOURS_DIR</step_1>
+    <step_2>place files in SOURS_DIR</step_2>
+    <step_3>launch the application</step_3>
+  </steps>
+  <expected_result>only those files that are in SOURCE_DIR are processed</expected_result>
+  <actual_result>processed files that are not only in SOURCE_DIR</actual_result>
+  <severity>major</severity>
+  <priority>medium</priority>  
+</bug_report>
